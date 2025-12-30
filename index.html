@@ -1,55 +1,88 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STAYVCS LUX | Spring Break 2025</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            gold: '#C5A059',
-            'gold-light': '#D4AF37',
-            'luxury-black': '#0A0A0A',
-          },
-          fontFamily: {
-            serif: ['Playfair Display', 'serif'],
-            sans: ['Montserrat', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
-  <style>
-    body { background-color: #000; }
-    .gold-gradient {
-      background: linear-gradient(135deg, #C5A059 0%, #F5E3C0 50%, #C5A059 100%);
-    }
-    .text-gold-gradient {
-      background: linear-gradient(135deg, #C5A059 0%, #F5E3C0 50%, #C5A059 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: #000; }
-    ::-webkit-scrollbar-thumb { background: #C5A059; border-radius: 4px; }
-  </style>
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
-  }
-}
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAYVCS LUX - Spring Break 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gold-text { color: #C5A059; }
+        .gold-bg { background-color: #C5A059; }
+        .card-hover:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+    </style>
 </head>
-<body class="text-white antialiased">
-  <div id="root"></div>
+<body class="bg-black text-white font-serif">
+
+    <header class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 px-4">
+            <h1 class="text-5xl md:text-7xl mb-4 font-bold uppercase tracking-tighter">Your Spring Break <span class="gold-text italic block">Vacation Starts Here</span></h1>
+            <p class="text-xl max-w-2xl mx-auto mb-8 font-light">Experience luxury at the world's most iconic destinations. Exclusive 2025 deals powered by Expedia.</p>
+            <div class="flex gap-4 justify-center">
+                <a href="#destinations" class="gold-bg text-black px-10 py-4 font-bold uppercase tracking-widest hover:bg-white transition duration-300">Explore Destinations</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="destinations" class="py-20 px-4 max-w-7xl mx-auto">
+        <h2 class="text-3xl gold-text text-center mb-16 uppercase tracking-[0.3em] font-bold">The 2025 Luxury Collection</h2>
+        
+        <div class="flex flex-wrap justify-center gap-8">
+            
+            <a href="https://www.expedia.com/shop/stayvcs-llc/las-vegas" class="card-hover relative group block w-full md:w-[30%] h-96 overflow-hidden rounded-sm shadow-2xl border border-gray-900">
+                <img src="https://images.unsplash.com/photo-1581351123004-757df051db8e?auto=format&fit=crop&w=800&q=80" class="absolute inset-0 w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition duration-500" alt="Las Vegas">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
+                <div class="absolute bottom-8 left-8">
+                    <h3 class="text-3xl font-bold mb-1">Las Vegas</h3>
+                    <p class="gold-text uppercase text-xs tracking-[0.2em]">The Strip at Night</p>
+                </div>
+            </a>
+
+            <a href="https://www.expedia.com/shop/stayvcs-llc/orlando" class="card-hover relative group block w-full md:w-[30%] h-96 overflow-hidden rounded-sm shadow-2xl border border-gray-900">
+                <img src="https://images.unsplash.com/photo-1560200353-ce0a76b1d438?auto=format&fit=crop&w=800&q=80" class="absolute inset-0 w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition duration-500" alt="Orlando">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
+                <div class="absolute bottom-8 left-8">
+                    <h3 class="text-3xl font-bold mb-1">Orlando</h3>
+                    <p class="gold-text uppercase text-xs tracking-[0.2em]">Luxury Resort Escape</p>
+                </div>
+            </a>
+
+            <a href="https://www.expedia.com/shop/stayvcs-llc/miami" class="card-hover relative group block w-full md:w-[30%] h-96 overflow-hidden rounded-sm shadow-2xl border border-gray-900">
+                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80" class="absolute inset-0 w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition duration-500" alt="Miami">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
+                <div class="absolute bottom-8 left-8">
+                    <h3 class="text-3xl font-bold mb-1">Miami</h3>
+                    <p class="gold-text uppercase text-xs tracking-[0.2em]">Ocean Drive Vibes</p>
+                </div>
+            </a>
+
+            <a href="https://www.expedia.com/shop/stayvcs-llc/punta-cana" class="card-hover relative group block w-full md:w-[45%] h-96 overflow-hidden rounded-sm shadow-2xl border border-gray-900">
+                <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80" class="absolute inset-0 w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition duration-500" alt="Punta Cana">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
+                <div class="absolute bottom-8 left-8">
+                    <h3 class="text-3xl font-bold mb-1">Punta Cana</h3>
+                    <p class="gold-text uppercase text-xs tracking-[0.2em]">Caribbean Shores</p>
+                </div>
+            </a>
+
+            <a href="https://www.expedia.com/shop/stayvcs-llc/new-york" class="card-hover relative group block w-full md:w-[45%] h-96 overflow-hidden rounded-sm shadow-2xl border border-gray-900">
+                <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1200&q=80" class="absolute inset-0 w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition duration-500" alt="New York">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
+                <div class="absolute bottom-8 left-8">
+                    <h3 class="text-3xl font-bold mb-1">New York City</h3>
+                    <p class="gold-text uppercase text-xs tracking-[0.2em]">Manhattan Skyline</p>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="mt-24 text-center border-t border-gray-900 pt-16">
+            <h4 class="text-4xl mb-10 font-bold">Discover More Vacation Spots</h4>
+            <a href="https://www.expedia.com/shop/stayvcs-llc" class="inline-block border border-[#C5A059] gold-text px-12 py-5 font-bold uppercase tracking-widest hover:bg-[#C5A059] hover:text-black transition duration-500 text-lg">
+                Explore the Full Collection
+            </a>
+        </div>
+    </section>
+
 </body>
 </html>
