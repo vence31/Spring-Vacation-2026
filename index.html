@@ -9,6 +9,16 @@
         .gold-text { color: #C5A059; }
         .gold-bg { background-color: #C5A059; }
         .card-hover:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+        
+        /* Animation for the scroll arrow */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+        .bounce {
+            animation: bounce 2s infinite;
+        }
     </style>
 </head>
 <body class="bg-black text-white font-serif">
@@ -22,13 +32,21 @@
                 <a href="#destinations" class="gold-bg text-black px-10 py-4 font-bold uppercase tracking-widest hover:bg-white transition duration-300">Explore Destinations</a>
             </div>
         </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center z-20">
+            <p class="gold-text uppercase text-xs tracking-[0.3em] mb-2 font-bold">Scroll</p>
+            <a href="#destinations" class="bounce inline-block">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                </svg>
+            </a>
+        </div>
     </header>
 
     <section id="destinations" class="py-20 px-4 max-w-7xl mx-auto">
         <h2 class="text-3xl gold-text text-center mb-16 uppercase tracking-[0.3em] font-bold">The 2026 Luxury Collection</h2>
         
         <div class="flex flex-wrap justify-center gap-8">
-            
             <a href="https://www.expedia.com/shop/stayvcs-llc/las-vegas" class="card-hover relative group block w-full md:w-[30%] h-96 overflow-hidden rounded-sm shadow-2xl border border-gray-900">
                 <img src="https://images.unsplash.com/photo-1581351123004-757df051db8e?auto=format&fit=crop&w=800&q=80" class="absolute inset-0 w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition duration-500" alt="Las Vegas">
                 <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
@@ -73,7 +91,6 @@
                     <p class="gold-text uppercase text-xs tracking-[0.2em]">Manhattan Skyline</p>
                 </div>
             </a>
-
         </div>
 
         <div class="mt-24 text-center border-t border-gray-900 pt-16">
