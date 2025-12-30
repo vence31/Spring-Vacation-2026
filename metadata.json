@@ -1,7 +1,0 @@
-{
-  "name": "STAYVCS LUX - Spring Break 2025",
-  "description": "A premium luxury travel portal offering exclusive Spring Break 2025 destinations and an AI-powered travel concierge for tailored recommendations.",
-  "requestFramePermissions": [
-    "geolocation"
-  ]
-}
