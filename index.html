@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spring Vacation 2026 | Travel Bundles</title>
+  <title>Spring Vacation 2026 | Flight + Hotel Bundles</title>
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -20,534 +20,144 @@
 
 <body class="bg-slate-50 text-slate-900">
 
-  <!-- HERO -->
-  <section class="text-center py-14 px-4 bg-gradient-to-b from-blue-50 to-white">
-    <h1 class="text-3xl md:text-4xl font-bold mb-4">
-      Escape the Cold. Reset Your Soul.
-    </h1>
-    <p class="text-lg text-slate-600 max-w-2xl mx-auto">
-      Book Spring & Summer vacation bundles and lock in flight + hotel savings now.
-    </p>
-  </section>
+<!-- HERO -->
+<section class="bg-gradient-to-b from-blue-50 to-white py-16 px-4 text-center">
+  <h1 class="text-3xl md:text-4xl font-extrabold mb-4">
+    Escape the Cold. Reset Your Life.
+  </h1>
+  <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+    Book your Spring or Summer 2026 getaway with Flight + Hotel bundles and unlock serious savings.
+  </p>
+</section>
 
-  <!-- COUNTDOWN -->
-  <section class="py-8 text-center">
-    <h2 class="text-xl font-semibold mb-4">Limited-Time Spring Deals End In</h2>
-    <div id="countdown" class="flex justify-center gap-6 text-lg font-semibold">
-      <div><span id="days">00</span> Days</div>
-      <div><span id="hours">00</span> Hrs</div>
-      <div><span id="minutes">00</span> Min</div>
-    </div>
-  </section>
+<!-- HOW IT WORKS -->
+<section class="max-w-6xl mx-auto px-4 py-12">
+  <h2 class="text-2xl font-bold text-center mb-8">
+    Booking Your 2026 Getaway Is Easy
+  </h2>
 
-  <!-- DESTINATIONS -->
-  <section class="max-w-6xl mx-auto px-4 pb-16">
-    <div class="grid md:grid-cols-3 gap-8">
-
-      <!-- CANCUN -->
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21" alt="Cancun Beach" class="h-48 w-full object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Cancun, Mexico</h3>
-          <p class="text-slate-600 mb-4">All-inclusive resorts, turquoise water, stress-free relaxation.</p>
-          <a href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
-             target="_blank"
-             class="block text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">
-            Build Vacation Package
-          </a>
-        </div>
-      </div>
-
-      <!-- MIAMI -->
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Miami Beach" class="h-48 w-full object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Miami, Florida</h3>
-          <p class="text-slate-600 mb-4">Warm beaches, nightlife, oceanfront hotels.</p>
-          <a href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
-             target="_blank"
-             class="block text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">
-            Build Vacation Package
-          </a>
-        </div>
-      </div>
-
-      <!-- LAS VEGAS -->
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Las Vegas Strip" class="h-48 w-full object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Las Vegas, Nevada</h3>
-          <p class="text-slate-600 mb-4">Resorts, shows, pools, and nonstop energy.</p>
-          <a href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
-             target="_blank"
-             class="block text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">
-            Build Vacation Package
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-slate-900 text-slate-300 py-6 text-center text-sm">
-    © 2026 Spring Vacation Deals · Powered by Expedia Affiliate Network
-  </footer>
-
-  <!-- COUNTDOWN SCRIPT -->
-  <script>
-    const targetDate = new Date("March 31, 2026 23:59:59").getTime();
-
-    setInterval(() => {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-      document.getElementById("days").innerText = days >= 0 ? days : 0;
-      document.getElementById("hours").innerText = hours >= 0 ? hours : 0;
-      document.getElementById("minutes").innerText = minutes >= 0 ? minutes : 0;
-    }, 1000);
-  </script>
-
-</body>
-</html>
-      <!-- MAIN BUTTON -->
-      <a
-        href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="block w-full bg-blue-600 text-white py-4 rounded-xl font-semibold text-lg hover:bg-blue-700 transition"
-      >
-        Build Your Vacation Package
-      </a>
-
-      <p class="text-sm text-gray-500 mt-5">
-        Choose your destination, dates, and budget.<br>
-        Add flights when you’re ready.
-      </p>
+  <div class="grid md:grid-cols-3 gap-6 text-center">
+    <div class="bg-white p-6 rounded-xl shadow">
+      <div class="text-blue-600 text-2xl font-bold mb-2">1</div>
+      <p class="font-semibold">Choose a destination below</p>
     </div>
 
-    <!-- Footer -->
-    <p class="text-xs text-gray-400 mt-6 text-center max-w-md">
-      Prices and availability are subject to change.  
-      You’ll complete your booking securely on Expedia.
-    </p>
+    <div class="bg-white p-6 rounded-xl shadow">
+      <div class="text-blue-600 text-2xl font-bold mb-2">2</div>
+      <p class="font-semibold">Build your Flight + Hotel bundle</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow">
+      <div class="text-blue-600 text-2xl font-bold mb-2">3</div>
+      <p class="font-semibold">Save money & book securely</p>
+    </div>
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="py-10 text-center">
+  <h3 class="text-xl font-semibold mb-4">Spring Deals End Soon</h3>
+  <div id="countdown" class="flex justify-center gap-6 text-lg font-bold">
+    <div><span id="days">00</span> Days</div>
+    <div><span id="hours">00</span> Hours</div>
+    <div><span id="minutes">00</span> Minutes</div>
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section class="max-w-6xl mx-auto px-4 pb-16">
+  <div class="grid md:grid-cols-3 gap-8">
+
+    <!-- CANCUN -->
+    <div class="bg-white rounded-xl shadow overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1506929562872-bb421503ef21"
+        alt="Cancun Beach"
+        class="h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Cancun, Mexico</h3>
+        <p class="text-slate-600 mb-3">
+          Bundle & Save: Best rates when booking Flight + Hotel together.
+        </p>
+        <a
+          href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
+          target="_blank"
+          class="block text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">
+          Check Bundle Prices
+        </a>
+      </div>
+    </div>
+
+    <!-- MIAMI -->
+    <div class="bg-white rounded-xl shadow overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+        alt="Miami Beach"
+        class="h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Miami, Florida</h3>
+        <p class="text-slate-600 mb-3">
+          Bundle & Save: Best rates when booking Flight + Hotel together.
+        </p>
+        <a
+          href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
+          target="_blank"
+          class="block text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">
+          Check Bundle Prices
+        </a>
+      </div>
+    </div>
+
+    <!-- LAS VEGAS -->
+    <div class="bg-white rounded-xl shadow overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+        alt="Las Vegas Strip"
+        class="h-48 w-full object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Las Vegas, Nevada</h3>
+        <p class="text-slate-600 mb-3">
+          Bundle & Save: Best rates when booking Flight + Hotel together.
+        </p>
+        <a
+          href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
+          target="_blank"
+          class="block text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">
+          Check Bundle Prices
+        </a>
+      </div>
+    </div>
 
   </div>
+</section>
 
-</body>
-</html>            padding: 0 20px;
-        }
+<!-- TRUST -->
+<section class="text-center pb-10 text-sm text-slate-500">
+  Official Expedia Partner · Secure & Encrypted Bookings
+</section>
 
-        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
-        .hero p { font-size: 1.2rem; margin-bottom: 25px; }
+<!-- FOOTER -->
+<footer class="bg-slate-900 text-slate-300 text-center py-6 text-sm">
+  © 2026 Spring Vacation Deals · Expedia Affiliate Network
+</footer>
 
-        /* Countdown Timer */
-        #timer {
-            background: var(--secondary);
-            color: var(--primary);
-            padding: 15px 30px;
-            border-radius: 50px;
-            font-weight: bold;
-            display: flex;
-            gap: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
+<!-- COUNTDOWN SCRIPT -->
+<script>
+  const targetDate = new Date("March 31, 2026 23:59:59").getTime();
 
-        /* Container */
-        .container {
-            max-width: 1100px;
-            margin: -50px auto 50px;
-            padding: 0 20px;
-        }
+  setInterval(() => {
+    const now = new Date().getTime();
+    const diff = targetDate - now;
 
-        /* Destination Grid */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
+    const days = Math.max(0, Math.floor(diff / (1000 * 60 * 60 * 24)));
+    const hours = Math.max(0, Math.floor((diff / (1000 * 60 * 60)) % 24));
+    const minutes = Math.max(0, Math.floor((diff / (1000 * 60)) % 60));
 
-        .card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            position: relative;
-        }
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+  }, 1000);
+</script>
 
-        .card:hover { transform: translateY(-10px); }
-
-        .badge {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: var(--accent);
-            color: white;
-            padding: 5px 12px;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 0.8rem;
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card-content { padding: 20px; }
-        .card-content h3 { margin: 0 0 10px; }
-
-        .cta-button {
-            display: block;
-            text-align: center;
-            background: var(--primary);
-            color: white;
-            text-decoration: none;
-            padding: 12px;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-
-        .cta-button:hover { background: #00224d; }
-
-        /* Comparison Table */
-        .comparison-section {
-            margin-top: 60px;
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            text-align: left;
-            padding: 15px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .savings { color: #28a745; font-weight: bold; }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            color: #777;
-            font-size: 0.9rem;
-        }
-    </style>
-</head>
-<body>
-
-    <header class="hero">
-        <h1>Spring Vacation 2026</h1>
-        <p>Book Smarter. Bundle Flight + Hotel to Save Big.</p>
-        <div id="timer">
-            <div><span id="days">00</span><br><small>Days</small></div>
-            <div><span id="hours">00</span><br><small>Hrs</small></div>
-            <div><span id="minutes">00</span><br><small>Min</small></div>
-        </div>
-    </header>
-
-    <div class="container">
-        <div class="grid">
-            <div class="card">
-                <div class="badge">BEST VALUE</div>
-                <img src="https://images.unsplash.com/photo-1512813588641-0428d0034444?auto=format&fit=crop&w=500&q=80" alt="Cancun">
-                <div class="card-content">
-                    <h3>Cancun All-Inclusive</h3>
-                    <p>Crystal clear waters and non-stop entertainment. Perfect for families and couples.</p>
-                    <a href="https://www.expedia.com/Vacation-Packages?destination=Cancun&packageType=fh&campaignId=YOUR_CAMPAIGN_ID" target="_blank" class="cta-button">Check Bundle Prices <i class="fas fa-chevron-right"></i></a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?auto=format&fit=crop&w=500&q=80" alt="Miami">
-                <div class="card-content">
-                    <h3>Miami Beach Escape</h3>
-                    <p>South Beach nightlife meets luxury shopping. Experience the pulse of Florida.</p>
-                    <a href="https://www.expedia.com/Vacation-Packages?destination=Miami&packageType=fh&campaignId=YOUR_CAMPAIGN_ID" target="_blank" class="cta-button">Check Bundle Prices <i class="fas fa-chevron-right"></i></a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="badge">LIMITED TIME</div>
-                <img src="https://images.unsplash.com/photo-1581338834647-b0fb40704e21?auto=format&fit=crop&w=500&q=80" alt="Las Vegas">
-                <div class="card-content">
-                    <h3>Las Vegas Strip</h3>
-                    <p>World-class shows and iconic casinos. What happens here, stays here.</p>
-                    <a href="https://www.expedia.com/Vacation-Packages?destination=Las%20Vegas&packageType=fh&campaignId=YOUR_CAMPAIGN_ID" target="_blank" class="cta-button">Check Bundle Prices <i class="fas fa-chevron-right"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <section class="comparison-section">
-            <h2 style="text-align: center;">Why Bundle with Expedia?</h2>
-            <p style="text-align: center; color: #666;">Booking flights and hotels separately often results in higher nightly rates. By selecting a "Package," you unlock wholesale rates unavailable to the general public.</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Option</th>
-                        <th>Separate Cost</th>
-                        <th>Bundle Price</th>
-                        <th>Your Savings</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Flight + 5-Star Hotel</strong></td>
-                        <td>$1,450</td>
-                        <td>$1,120</td>
-                        <td class="savings">Save $330!</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Roundtrip + Resort</strong></td>
-                        <td>$1,200</td>
-                        <td>$950</td>
-                        <td class="savings">Save $250!</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </div>
-
-    <footer>
-        <p>Official Expedia Partner | Secure Checkout | 24/7 Travel Support</p>
-        <p>&copy; 2026 Spring Vacation Deals. All rights reserved.</p>
-    </footer>
-
-    <script>
-        const targetDate = new Date("March 1, 2026 00:00:00").getTime();
-
-        setInterval(function() {
-            const now = new Date().getTime();
-            const diff = targetDate - now;
-
-            const d = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-
-            document.getElementById("days").innerText = d;
-            document.getElementById("hours").innerText = h;
-            document.getElementById("minutes").innerText = m;
-        }, 1000);
-    </script>
-</body>
-</html>
-            padding: 0 20px;
-        }
-
-        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
-        .hero p { font-size: 1.2rem; margin-bottom: 25px; }
-
-        /* Countdown Timer */
-        #timer {
-            background: var(--secondary);
-            color: var(--primary);
-            padding: 15px 30px;
-            border-radius: 50px;
-            font-weight: bold;
-            display: flex;
-            gap: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-
-        /* Container */
-        .container {
-            max-width: 1100px;
-            margin: -50px auto 50px;
-            padding: 0 20px;
-        }
-
-        /* Destination Grid */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            position: relative;
-        }
-
-        .card:hover { transform: translateY(-10px); }
-
-        .badge {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: var(--accent);
-            color: white;
-            padding: 5px 12px;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 0.8rem;
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card-content { padding: 20px; }
-        .card-content h3 { margin: 0 0 10px; }
-
-        .cta-button {
-            display: block;
-            text-align: center;
-            background: var(--primary);
-            color: white;
-            text-decoration: none;
-            padding: 12px;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-
-        .cta-button:hover { background: #00224d; }
-
-        /* Comparison Table */
-        .comparison-section {
-            margin-top: 60px;
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            text-align: left;
-            padding: 15px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .savings { color: #28a745; font-weight: bold; }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            color: #777;
-            font-size: 0.9rem;
-        }
-    </style>
-</head>
-<body>
-
-    <header class="hero">
-        <h1>Spring Vacation 2026</h1>
-        <p>Book Smarter. Bundle Flight + Hotel to Save Big.</p>
-        <div id="timer">
-            <div><span id="days">00</span><br><small>Days</small></div>
-            <div><span id="hours">00</span><br><small>Hrs</small></div>
-            <div><span id="minutes">00</span><br><small>Min</small></div>
-        </div>
-    </header>
-
-    <div class="container">
-        <div class="grid">
-            <div class="card">
-                <div class="badge">BEST VALUE</div>
-                <img src="https://images.unsplash.com/photo-1512813588641-0428d0034444?auto=format&fit=crop&w=500&q=80" alt="Cancun">
-                <div class="card-content">
-                    <h3>Cancun All-Inclusive</h3>
-                    <p>Crystal clear waters and non-stop entertainment. Perfect for families and couples.</p>
-                    <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-button">Unlock My Savings <i class="fas fa-chevron-right"></i></a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?auto=format&fit=crop&w=500&q=80" alt="Miami">
-                <div class="card-content">
-                    <h3>Miami Beach Escape</h3>
-                    <p>South Beach nightlife meets luxury shopping. Experience the pulse of Florida.</p>
-                    <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-button">Unlock My Savings <i class="fas fa-chevron-right"></i></a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="badge">LIMITIED TIME</div>
-                <img src="https://images.unsplash.com/photo-1581338834647-b0fb40704e21?auto=format&fit=crop&w=500&q=80" alt="Las Vegas">
-                <div class="card-content">
-                    <h3>Las Vegas Strip</h3>
-                    <p>World-class shows and iconic casinos. What happens here, stays here.</p>
-                    <a href="YOUR_AFFILIATE_LINK_HERE" class="cta-button">Unlock My Savings <i class="fas fa-chevron-right"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <section class="comparison-section">
-            <h2 style="text-align: center;">Why Bundle with Expedia?</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Option</th>
-                        <th>Separate Cost</th>
-                        <th>Bundle Price</th>
-                        <th>Your Savings</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Flight + 5-Star Hotel</strong></td>
-                        <td>$1,450</td>
-                        <td>$1,120</td>
-                        <td class="savings">Save $330!</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Roundtrip + Resort</strong></td>
-                        <td>$1,200</td>
-                        <td>$950</td>
-                        <td class="savings">Save $250!</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </div>
-
-    <footer>
-        <p>Official Expedia Partner | Secure Checkout | 24/7 Travel Support</p>
-        <p>&copy; 2026 Spring Vacation Deals. All rights reserved.</p>
-    </footer>
-
-    <script>
-        // Simple Countdown Timer Logic
-        const targetDate = new Date("March 1, 2026 00:00:00").getTime();
-
-        setInterval(function() {
-            const now = new Date().getTime();
-            const diff = targetDate - now;
-
-            const d = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-
-            document.getElementById("days").innerText = d;
-            document.getElementById("hours").innerText = h;
-            document.getElementById("minutes").innerText = m;
-        }, 1000);
-    </script>
 </body>
 </html>
