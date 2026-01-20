@@ -3,18 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spring Vacation 2026 | Flight + Hotel Deals</title>
+  <title>Spring Vacation 2026 | Flight + Hotel Bundles</title>
 
-  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
+    body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
 
@@ -26,39 +22,15 @@
     Escape the Cold. Reset Your Life.
   </h1>
   <p class="text-lg text-slate-600 max-w-2xl mx-auto">
-    Flight + Hotel bundles save more than booking separately. Lock in Spring 2026 deals now.
+    Book Flight + Hotel bundles and save more than booking separately.
   </p>
 </section>
 
-<!-- HOW IT WORKS -->
-<section class="max-w-6xl mx-auto px-4 py-12">
-  <h2 class="text-2xl font-bold text-center mb-8">
-    Booking Your Getaway Is Simple
-  </h2>
-
-  <div class="grid md:grid-cols-3 gap-6 text-center">
-    <div class="bg-white p-6 rounded-xl shadow">
-      <div class="text-blue-600 text-2xl font-bold mb-2">1</div>
-      <p class="font-semibold">Pick a destination</p>
-    </div>
-    <div class="bg-white p-6 rounded-xl shadow">
-      <div class="text-blue-600 text-2xl font-bold mb-2">2</div>
-      <p class="font-semibold">Build Flight + Hotel bundle</p>
-    </div>
-    <div class="bg-white p-6 rounded-xl shadow">
-      <div class="text-blue-600 text-2xl font-bold mb-2">3</div>
-      <p class="font-semibold">Save & book securely</p>
-    </div>
-  </div>
-</section>
-
-<!-- COUNTDOWN -->
+<!-- COUNTDOWN (LOCKED 7 DAYS) -->
 <section class="py-10 text-center">
-  <h3 class="text-xl font-semibold mb-4">
-    Limited-Time Spring Deals End In
-  </h3>
+  <h3 class="text-xl font-semibold mb-4">Spring Deals End In</h3>
   <div class="flex justify-center gap-6 text-lg font-bold">
-    <div><span id="days">14</span> Days</div>
+    <div><span id="days">7</span> Days</div>
     <div><span id="hours">00</span> Hours</div>
     <div><span id="minutes">00</span> Minutes</div>
   </div>
@@ -71,13 +43,13 @@
     <!-- CANCUN -->
     <div class="bg-white rounded-xl shadow overflow-hidden">
       <img
-        src="https://images.unsplash.com/photo-1540202404-1b927e27fa8b"
-        alt="Cancun Beach Resort"
+        src="https://images.unsplash.com/photo-1506929562872-bb421503ef21"
+        alt="Cancun turquoise beach and resorts"
         class="h-48 w-full object-cover">
       <div class="p-6">
         <h3 class="text-xl font-bold mb-2">Cancun, Mexico</h3>
-        <p class="text-slate-600 mb-3 font-semibold text-blue-600">
-          Bundle & Save: Flight + Hotel deals unlock the lowest prices.
+        <p class="text-blue-600 font-semibold mb-3">
+          Tropical resorts, clear water, all-inclusive savings.
         </p>
         <a
           href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
@@ -91,13 +63,13 @@
     <!-- MIAMI -->
     <div class="bg-white rounded-xl shadow overflow-hidden">
       <img
-        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
-        alt="Miami Beach Skyline"
+        src="https://images.unsplash.com/photo-1534447677768-be436bb09401"
+        alt="Miami luxury beachfront skyline"
         class="h-48 w-full object-cover">
       <div class="p-6">
         <h3 class="text-xl font-bold mb-2">Miami, Florida</h3>
-        <p class="text-slate-600 mb-3 font-semibold text-blue-600">
-          Beachfront hotels + flights cost less when bundled.
+        <p class="text-blue-600 font-semibold mb-3">
+          Luxury beaches, oceanfront hotels, nonstop energy.
         </p>
         <a
           href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
@@ -112,12 +84,12 @@
     <div class="bg-white rounded-xl shadow overflow-hidden">
       <img
         src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
-        alt="Las Vegas Strip at Night"
+        alt="Las Vegas Strip night lights"
         class="h-48 w-full object-cover">
       <div class="p-6">
         <h3 class="text-xl font-bold mb-2">Las Vegas, Nevada</h3>
-        <p class="text-slate-600 mb-3 font-semibold text-blue-600">
-          Resort stays drop in price when flights are added.
+        <p class="text-blue-600 font-semibold mb-3">
+          Iconic Strip, world-class resorts, unbeatable nightlife.
         </p>
         <a
           href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
@@ -131,34 +103,10 @@
   </div>
 </section>
 
-<!-- TRUST -->
-<section class="text-center pb-10 text-sm text-slate-500">
-  Official Expedia Partner · Secure · Encrypted Booking
-</section>
-
 <!-- FOOTER -->
 <footer class="bg-slate-900 text-slate-300 text-center py-6 text-sm">
-  © 2026 Spring Vacation Deals
+  Official Expedia Partner · Secure Booking
 </footer>
-
-<!-- COUNTDOWN SCRIPT (14 DAYS) -->
-<script>
-  const now = new Date();
-  const targetDate = new Date(now.getTime() + (14 * 24 * 60 * 60 * 1000));
-
-  setInterval(() => {
-    const current = new Date().getTime();
-    const diff = targetDate - current;
-
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((diff / (1000 * 60)) % 60);
-
-    document.getElementById("days").innerText = Math.max(days, 0);
-    document.getElementById("hours").innerText = Math.max(hours, 0);
-    document.getElementById("minutes").innerText = Math.max(minutes, 0);
-  }, 1000);
-</script>
 
 </body>
 </html>
