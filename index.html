@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spring Vacation 2026 | Bundle & Save</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #003580;
-            --secondary: #ffb700;
-            --accent: #e61e2e;
-            --light: #f5f7fa;
-            --dark: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            background-color: var(--light);
-            color: var(--dark);
-        }
+  <title>SmartTravel Bundles | Build Your Vacation Package</title>
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            padding: 0 20px;
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+  <div class="min-h-screen flex flex-col items-center justify-center px-4">
+
+    <!-- Card -->
+    <div class="max-w-md w-full bg-white rounded-2xl shadow-lg p-8 text-center">
+
+      <h1 class="text-3xl font-bold mb-4">
+        Build Your Perfect Vacation
+      </h1>
+
+      <p class="text-gray-600 mb-6">
+        Flights + Hotels bundled together — often cheaper than booking separately.
+        Simple. Fast. Stress-free.
+      </p>
+
+      <!-- MAIN BUTTON -->
+      <a
+        href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="block w-full bg-blue-600 text-white py-4 rounded-xl font-semibold text-lg hover:bg-blue-700 transition"
+      >
+        Build Your Vacation Package
+      </a>
+
+      <p class="text-sm text-gray-500 mt-5">
+        Choose your destination, dates, and budget.<br>
+        Add flights when you’re ready.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <p class="text-xs text-gray-400 mt-6 text-center max-w-md">
+      Prices and availability are subject to change.  
+      You’ll complete your booking securely on Expedia.
+    </p>
+
+  </div>
+
+</body>
+</html>            padding: 0 20px;
         }
 
         .hero h1 { font-size: 3rem; margin-bottom: 10px; }
