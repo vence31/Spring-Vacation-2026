@@ -5,151 +5,146 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Spring Vacation 2026 | Flight + Hotel Bundles</title>
 
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     body { font-family: 'Inter', sans-serif; }
+    .hero-bg {
+        background: linear-gradient(rgba(248, 250, 252, 0.8), rgba(248, 250, 252, 0.9)), 
+                    url('https://images.unsplash.com/photo-1506929113679-b62dec3ef933?auto=format&fit=crop&w=1500&q=80');
+        background-size: cover;
+        background-position: center;
+    }
   </style>
 </head>
 
 <body class="bg-slate-50 text-slate-900">
 
-<!-- HERO -->
-<section class="bg-gradient-to-b from-blue-50 to-white py-16 px-4 text-center">
-  <h1 class="text-3xl md:text-4xl font-extrabold mb-4">
+<section class="hero-bg py-20 px-4 text-center border-b border-slate-200">
+  <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight text-blue-900">
     Escape the Cold. Find Your Perfect Bundle.
   </h1>
-  <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+  <p class="text-lg text-slate-700 max-w-2xl mx-auto font-medium">
     Flight + Hotel bundles save you more than booking separately. Explore categories and start your Spring 2026 getaway today!
   </p>
 </section>
 
-<!-- COUNTDOWN (7-Day Urgency) -->
-<section class="py-10 text-center">
-  <h3 class="text-xl font-semibold mb-4">Limited-Time Spring Deals End In</h3>
-  <div class="flex justify-center gap-6 text-lg font-bold">
-    <div><span id="days">7</span> Days</div>
-    <div><span id="hours">00</span> Hours</div>
-    <div><span id="minutes">00</span> Minutes</div>
+<section class="py-10 text-center bg-white shadow-sm">
+  <h3 class="text-sm uppercase tracking-widest font-bold text-red-600 mb-4">Limited-Time Spring Deals End In</h3>
+  <div class="flex justify-center gap-8 text-2xl font-black text-slate-800">
+    <div class="flex flex-col"><span id="days">7</span><span class="text-xs font-normal text-slate-500 uppercase">Days</span></div>
+    <div class="flex flex-col"><span id="hours">00</span><span class="text-xs font-normal text-slate-500 uppercase">Hrs</span></div>
+    <div class="flex flex-col"><span id="minutes">00</span><span class="text-xs font-normal text-slate-500 uppercase">Min</span></div>
   </div>
 </section>
 
-<!-- VACATION CATEGORIES GRID -->
-<section class="max-w-6xl mx-auto px-4 py-12">
-  <h2 class="text-2xl font-bold text-center mb-8">
+<section class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="text-3xl font-extrabold text-center mb-12">
     Browse by Category
   </h2>
 
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
 
-    <!-- Beach Resorts -->
-    <div class="bg-white rounded-xl shadow overflow-hidden">
-      <img src="https://unsplash.com/photos/swimming-pool-near-ocean-2gOxKj594nM"
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100 transition hover:shadow-2xl">
+      <img src="https://images.unsplash.com/photo-1520483601560-389dff434f1c?auto=format&fit=crop&w=800&q=80"
            alt="Beach Resorts"
-           class="h-48 w-full object-cover">
-      <div class="p-6">
+           class="h-56 w-full object-cover">
+      <div class="p-6 text-center">
         <h3 class="text-xl font-bold mb-2">Beach Resorts</h3>
-        <p class="text-blue-600 font-semibold mb-3">
+        <p class="text-blue-600 font-semibold mb-5 italic text-sm">
           Sun, sand, and crystal clear water.
         </p>
-        <a href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
+        <a href="https://www.expedia.com/Vacation-Packages?destination=Caribbean&packageType=fh&affcid=US.DIRECT.PHG.1011l409460.0"
            target="_blank"
-           class="block text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">
-          Explore Packages
+           class="block bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition shadow-md">
+          Check Bundle Prices
         </a>
       </div>
     </div>
 
-    <!-- Luxury Hotels -->
-    <div class="bg-white rounded-xl shadow overflow-hidden">
-      <img src="https://unsplash.com/photos/building-with-infinity-pool-MA82mPIZeGI"
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100 transition hover:shadow-2xl">
+      <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
            alt="Luxury Hotels"
-           class="h-48 w-full object-cover">
-      <div class="p-6">
+           class="h-56 w-full object-cover">
+      <div class="p-6 text-center">
         <h3 class="text-xl font-bold mb-2">Luxury Hotels</h3>
-        <p class="text-blue-600 font-semibold mb-3">
+        <p class="text-blue-600 font-semibold mb-5 italic text-sm">
           World-class stays, first-class comfort.
         </p>
-        <a href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
+        <a href="https://www.expedia.com/Vacation-Packages?packageType=fh&affcid=US.DIRECT.PHG.1011l409460.0"
            target="_blank"
-           class="block text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">
-          Explore Packages
+           class="block bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition shadow-md">
+          Check Bundle Prices
         </a>
       </div>
     </div>
 
-    <!-- Family-Friendly -->
-    <div class="bg-white rounded-xl shadow overflow-hidden">
-      <img src="https://unsplash.com/photos/a-group-of-people-sitting-around-a-pool-with-an-inflatable-ducky-lXC43SoJeDM"
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100 transition hover:shadow-2xl">
+      <img src="https://images.unsplash.com/photo-1502675135487-e971002a6adb?auto=format&fit=crop&w=800&q=80"
            alt="Family-Friendly Vacations"
-           class="h-48 w-full object-cover">
-      <div class="p-6">
+           class="h-56 w-full object-cover">
+      <div class="p-6 text-center">
         <h3 class="text-xl font-bold mb-2">Family-Friendly</h3>
-        <p class="text-blue-600 font-semibold mb-3">
+        <p class="text-blue-600 font-semibold mb-5 italic text-sm">
           Fun for kids and adults alike.
         </p>
-        <a href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
+        <a href="https://www.expedia.com/Vacation-Packages?destination=Orlando&packageType=fh&affcid=US.DIRECT.PHG.1011l409460.0"
            target="_blank"
-           class="block text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">
-          Explore Packages
+           class="block bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition shadow-md">
+          Check Bundle Prices
         </a>
       </div>
     </div>
 
-    <!-- Romantic Getaways -->
-    <div class="bg-white rounded-xl shadow overflow-hidden">
-      <img src="https://unsplash.com/photos/man-and-woman-sitting-down-on-brown-carpet-near-tent-surrounded-by-lights-Z5mzhMcFybs"
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100 transition hover:shadow-2xl">
+      <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=800&q=80"
            alt="Romantic Getaways"
-           class="h-48 w-full object-cover">
-      <div class="p-6">
+           class="h-56 w-full object-cover">
+      <div class="p-6 text-center">
         <h3 class="text-xl font-bold mb-2">Romantic Getaways</h3>
-        <p class="text-blue-600 font-semibold mb-3">
+        <p class="text-blue-600 font-semibold mb-5 italic text-sm">
           Escape together and relax.
         </p>
-        <a href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
+        <a href="https://www.expedia.com/Vacation-Packages?destination=Hawaii&packageType=fh&affcid=US.DIRECT.PHG.1011l409460.0"
            target="_blank"
-           class="block text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">
-          Explore Packages
+           class="block bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition shadow-md">
+          Check Bundle Prices
         </a>
       </div>
     </div>
 
-    <!-- Adventure Trips -->
-    <div class="bg-white rounded-xl shadow overflow-hidden">
-      <img src="https://unsplash.com/photos/running-man-on-bridge-uq2E2V4LhCY"
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100 transition hover:shadow-2xl">
+      <img src="https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=800&q=80"
            alt="Adventure Trips"
-           class="h-48 w-full object-cover">
-      <div class="p-6">
+           class="h-56 w-full object-cover">
+      <div class="p-6 text-center">
         <h3 class="text-xl font-bold mb-2">Adventure Trips</h3>
-        <p class="text-blue-600 font-semibold mb-3">
-          Hiking, diving, and adrenaline-filled fun.
+        <p class="text-blue-600 font-semibold mb-5 italic text-sm">
+          Hiking, diving, and adrenaline.
         </p>
-        <a href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
+        <a href="https://www.expedia.com/Vacation-Packages?destination=Costa%20Rica&packageType=fh&affcid=US.DIRECT.PHG.1011l409460.0"
            target="_blank"
-           class="block text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">
-          Explore Packages
+           class="block bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition shadow-md">
+          Check Bundle Prices
         </a>
       </div>
     </div>
 
-    <!-- City Getaways -->
-    <div class="bg-white rounded-xl shadow overflow-hidden">
-      <img src="https://unsplash.com/photos/lighted-building-near-body-of-water-at-nighttime-P4tbpnpz61Y"
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100 transition hover:shadow-2xl">
+      <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=800&q=80"
            alt="City Getaways"
-           class="h-48 w-full object-cover">
-      <div class="p-6">
+           class="h-56 w-full object-cover">
+      <div class="p-6 text-center">
         <h3 class="text-xl font-bold mb-2">City Getaways</h3>
-        <p class="text-blue-600 font-semibold mb-3">
-          Explore vibrant city life and entertainment.
+        <p class="text-blue-600 font-semibold mb-5 italic text-sm">
+          Vibrant city life and entertainment.
         </p>
-        <a href="https://www.expedia.com/Vacation-Packages?clickref=1101lC99uKhH&affcid=US.DIRECT.PHG.1011l409460.0&afflid=1101lC99uKhH"
+        <a href="https://www.expedia.com/Vacation-Packages?destination=New%20York&packageType=fh&affcid=US.DIRECT.PHG.1011l409460.0"
            target="_blank"
-           class="block text-center bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">
-          Explore Packages
+           class="block bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition shadow-md">
+          Check Bundle Prices
         </a>
       </div>
     </div>
@@ -157,35 +152,40 @@
   </div>
 </section>
 
-<!-- TRUST -->
-<section class="text-center pb-10 text-sm text-slate-500">
-  Official Expedia Partner · Secure & Encrypted Booking
+<section class="text-center pb-16 px-4">
+    <div class="bg-blue-900 text-white py-10 rounded-3xl max-w-4xl mx-auto px-6 shadow-xl">
+        <h2 class="text-2xl font-bold mb-2 italic">Why these links are different?</h2>
+        <p class="text-blue-100">Standard links show nightly hotel rates. Our links activate the <strong>Expedia Bundle Engine</strong>, combining airfare and room costs to lower the total price of your 2026 trip.</p>
+        <div class="mt-6 text-xs opacity-60 tracking-widest uppercase font-bold">Official Expedia Partner · Secure Checkout</div>
+    </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-slate-900 text-slate-300 text-center py-6 text-sm">
-  © 2026 Spring Vacation Deals
+<footer class="bg-slate-900 text-slate-400 text-center py-10 text-sm">
+  © 2026 Spring Vacation Deals · All Prices subject to availability
 </footer>
 
-<!-- COUNTDOWN SCRIPT (7 days) -->
 <script>
+  // Countdown Timer
   const daysEl = document.getElementById("days");
   const hoursEl = document.getElementById("hours");
   const minutesEl = document.getElementById("minutes");
 
-  let countdownSeconds = 7 * 24 * 60 * 60; // 7 days in seconds
+  let countdownSeconds = 7 * 24 * 60 * 60;
 
-  setInterval(() => {
+  function updateTimer() {
     const days = Math.floor(countdownSeconds / (24 * 3600));
     const hours = Math.floor((countdownSeconds % (24*3600)) / 3600);
     const minutes = Math.floor((countdownSeconds % 3600) / 60);
 
     daysEl.innerText = days;
-    hoursEl.innerText = hours;
-    minutesEl.innerText = minutes;
+    hoursEl.innerText = hours.toString().padStart(2, '0');
+    minutesEl.innerText = minutes.toString().padStart(2, '0');
 
-    countdownSeconds = Math.max(countdownSeconds - 60, 0);
-  }, 60000); // update every minute
+    if(countdownSeconds > 0) countdownSeconds -= 60;
+  }
+
+  updateTimer();
+  setInterval(updateTimer, 60000);
 </script>
 
 </body>
